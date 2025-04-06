@@ -1,0 +1,21 @@
+{
+	"name": "http_src_ls",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/AARYA2k04/demo_project/refs/heads/main/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "azureuser",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault_ls",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "adf"
+			}
+		}
+	}
+}
