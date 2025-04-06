@@ -1,0 +1,10 @@
+{
+	"name": "adls_dest_ls",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://aldsstrg1.dfs.core.windows.net/"
+		}
+	}
+}
